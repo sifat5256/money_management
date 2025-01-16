@@ -5,6 +5,9 @@ import 'package:get/get.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 import '../../component/button.dart';
+import '../../main_bottom_nav_bar.dart';
+import '../app_layout/controller/app_lay_out_controller.dart';
+import '../app_layout/view/app_lay_out.dart';
 
 class ConfirmPinScreen extends StatefulWidget {
   const ConfirmPinScreen({super.key});
@@ -24,6 +27,7 @@ class _ConfirmPinScreenState extends State<ConfirmPinScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            Image.asset("lib/utils/assets/padlock.png",height: 350,),
             PinCodeTextField(
               appContext: context,
               length:4, // Set the number of PIN code fields
@@ -53,7 +57,7 @@ class _ConfirmPinScreenState extends State<ConfirmPinScreen> {
 
               textColor: Colors.blueAccent,
               onTap: () {
-               // Get.to(const SetUpPinScreen());
+                Get.to( AppLayOutScreen());
               },
               buttonColor: Colors.white,
             ),

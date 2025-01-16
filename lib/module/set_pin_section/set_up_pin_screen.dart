@@ -25,6 +25,7 @@ class _SetUpPinScreenState extends State<SetUpPinScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            Image.asset("lib/utils/assets/log-in (1).png",height: 350,),
             PinCodeTextField(
               appContext: context,
               length:4, // Set the number of PIN code fields
